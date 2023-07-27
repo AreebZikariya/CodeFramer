@@ -1,0 +1,1490 @@
+/* This is the CSS for all pages,and all media queries */
+:root {
+  /* Here is the 'root' of all colors */
+  --bg-green: rgb(0, 157, 110);
+  --dark-green: rgb(2, 130, 91);
+  --color-light: rgb(255, 255, 255);
+  --color-grey: rgb(216, 216, 216);
+  --light-grey: rgb(229, 229, 229);
+  --color-dark: rgb(0, 0, 0);
+  --color-blue: rgb(0, 0, 255);
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCode.ttf");
+}
+
+@font-face {
+  font-family: "Candara";
+  src: url("../fonts/Candara.ttf");
+}
+
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("../fonts/bahnschrift.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Cascadia Code semi bold";
+  src: url("../fonts/CascadiaCode.ttf");
+  font-weight: bolder;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-grey);
+  font-family: "Cascadia Code semi bold";
+}
+
+/* The above CSS is to set a width of an element by giving it a class 'w' and giving the vlaue in viewport width eg.= 'w-10' */
+.w-10 {
+  width: 10vw;
+}
+.w-20 {
+  width: 20vw;
+}
+.w-30 {
+  width: 30vw;
+}
+.w-40 {
+  width: 40vw;
+}
+.w-50 {
+  width: 50vw;
+}
+.w-60 {
+  width: 60vw;
+}
+.w-70 {
+  width: 70vw;
+}
+.w-80 {
+  width: 80vw;
+}
+.w-90 {
+  width: 90vw;
+}
+.w-100 {
+  width: 100vw;
+}
+
+/* Here is the Css for Laptop(s),Pc(s),Tv(s)etc. */
+@media screen and (min-width: 1024px) {
+  .about-card {
+    margin: 1vw 0;
+    font-size: 1.4vw;
+    font-family: "Candara";
+  }
+
+  .alert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    position: absolute;
+    height: 10vw;
+    width: 20vw;
+    border: 6px solid var(--bg-green);
+    border-radius: 1vw;
+    background-color: var(--color-light);
+    left: 40vw;
+    /* top: 15vw; */
+    top: -14vw;
+    transition: 0.3s all ease-in;
+  }
+
+  .alert-content {
+    margin: 1vw 0 2vw 0;
+    font-size: 1.3vw;
+    font-family: "Bahnschrift";
+    font-weight: bolder;
+    transition: 0.3s ease-in;
+    text-align: center;
+  }
+
+  .alert-btn {
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    display: flex;
+    font-size: 1vw;
+    font-family: "Cascadia Code semi bold";
+    color: var(--color-light);
+    background-color: var(--bg-green);
+    border: 0.35vw solid var(--bg-green);
+    padding: 0.3vw 0.6vw;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1vw;
+    margin: 0.5vw 0;
+  }
+
+  .alert-btn:hover {
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    display: flex;
+    font-size: 1vw;
+    color: var(--bg-green);
+    background-color: var(--color-light);
+    border: 0.35vw solid var(--bg-green);
+    padding: 0.3vw 0.6vw;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1vw;
+    margin: 0.5vw 0;
+  }
+  
+  .about-web {
+    font-family: "Bahnschrift";
+    font-size: 1.3vw;
+    margin: 2vw 3vw;
+  }
+
+  .ask-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw;
+  }
+
+  .advertisement-image {
+    border-radius: 1vw;
+    border-bottom-right-radius: 10vw;
+    border-top-left-radius: 10vw;
+    background-color: var(--color-light);
+    width: 80%;
+    height: 40vw;
+    margin: 2vw 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .body-image {
+    box-shadow: none;
+    height: 25vw;
+    margin: 0 3vw 0 0;
+    padding: 1vw;
+    border-top-left-radius: 20vw;
+    border-bottom-right-radius: 10vw;
+  }
+
+  .body-image2 {
+    display: none;
+  }
+
+
+  .btn {
+    transition: all 0.3s ease-in;
+    width: inherit;
+    padding: 0.3vw 0.5vw;
+    border: 2px solid var(--color-light);
+    border-radius: 0.5vw;
+    background: var(--bg-green);
+    color: var(--color-light);
+    font-weight: bold;
+    font-size: 1vw;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    padding: 0.3vw 0.5vw;
+    border: 2px solid var(--color-light);
+    border-radius: 0.5vw;
+    background: var(--color-light);
+    color: var(--bg-green);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+  }
+
+  .c-image {
+    height: 14vw;
+    margin: 0.5vw;
+  }
+
+  .css-image {
+    height: 15vw;
+  }
+
+  .card-content {
+    margin: 0 2vw;
+  }
+
+  .card-title {
+    font-size: 2vw;
+  }
+
+  .standard-btn {
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    display: flex;
+    font-size: 1vw;
+    font-family: "Cascadia Code semi bold";
+    color: var(--color-light);
+    background-color: var(--bg-green);
+    border: 0.35vw solid var(--bg-green);
+    padding: 0.3vw 0.6vw;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1vw;
+    margin: 0.5vw 0;
+  }
+
+  .standard-btn:hover {
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    display: flex;
+    font-size: 1vw;
+    color: var(--bg-green);
+    background-color: var(--color-light);
+    border: 0.35vw solid var(--bg-green);
+    padding: 0.3vw 0.6vw;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1vw;
+    margin: 0.5vw 0;
+  }
+
+  .card {
+    border: 6px solid var(--bg-green);
+    border-radius: 1vw;
+    margin: 2vw;
+    padding: 0.7vw;
+    display: flex;
+    width: 74vw;
+    height: 12vw;
+  }
+
+  .card-image-1 {
+    margin: 0.5vw 0 0 1vw;
+    height: 11vw;
+  }
+  .card-image-2 {
+    margin: 0 1vw 0 2vw;
+    height: 12vw;
+  }
+  .card-image-3 {
+    margin: 0 0 0 1vw;
+    height: 12vw;
+  }
+  .card-image-4 {
+    margin: 1vw 0 0 2vw;
+    height: 10vw;
+  }
+  .card-image-5 {
+    margin: 0 0 0 1vw;
+    height: 12vw;
+  }
+  .card-image-6 {
+    margin: 1vw 1vw 0 2vw;
+    height: 10vw;
+  }
+
+  .cards-container {
+    border-radius: 1vw;
+    margin: 5vw;
+    display: grid;
+    align-items: center;
+    background-color: var(--color-light);
+    width: 80vw;
+    height: fit-content;
+  }
+  .container {
+    border-radius: 1vw;
+    margin: 5vw;
+    display: grid;
+    align-items: center;
+    background-color: var(--color-light);
+    width: 80vw;
+    height: fit-content;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 30vw 30vw;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .doc-btn {
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    display: flex;
+    font-size: 1vw;
+    font-family: "Cascadia Code semi bold";
+    color: var(--color-light);
+    background-color: var(--bg-green);
+    border: 0.35vw solid var(--bg-green);
+    padding: 0.3vw 0.6vw;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1vw;
+    margin: 0.5vw 0;
+  }
+
+  .doc-btn:hover {
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    display: flex;
+    font-size: 1vw;
+    color: var(--bg-green);
+    background-color: var(--color-light);
+    border: 0.35vw solid var(--bg-green);
+    padding: 0.3vw 0.6vw;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1vw;
+    margin: 0.5vw 0;
+  }
+
+  .doc-grid {
+    display: grid;
+    grid-row: auto;
+  }
+
+  .font-larger {
+    font-size: 4vw;
+    text-align: center;
+  }
+  .font-large {
+    font-size: 3vw;
+    text-align: center;
+  }
+  .font-medium {
+    font-size: 2vw;
+    text-align: center;
+  }
+  .font-small {
+    font-size: 1.25vw;
+    text-align: center;
+  }
+
+  .form-head {
+    font-size: 3vw;
+    color: var(--bg-green);
+  }
+
+  .form-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--bg-green);
+    border-radius: 1vw;
+    width: 60%;
+    margin: 2vw;
+    padding: 4vw 0;
+  }
+
+  .foot-para {
+    font-family: "Bahnschrift";
+    margin: 1vw;
+    text-align: center;
+  }
+
+  .foot-para-bold {
+    font-family: "Candara";
+    margin: 1vw;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  .search-div {
+    position: absolute;
+    right: 1vw;
+  }
+
+  .search-bar {
+    font-size: 1vw;
+    width: 20vw;
+    height: 1vw;
+    background: var(--color-light);
+    border: 2px solid var(--color-light);
+    border-radius: 0.5vw;
+    padding: 0.5vw;
+  }
+
+  .web-title {
+    font-size: 2vw;
+  }
+
+  .g-item {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    margin: 1vw 3.6vw;
+    border: 0.4vw solid var(--bg-green);
+    border-radius: 1vw;
+  }
+
+  .html-image {
+    height: 12vw;
+    margin: 1.5vw;
+  }
+
+  .heading-3 {
+    font-size: 1.7vw;
+    font-family: "Bahnschrift";
+    font-weight: bolder;
+  }
+
+  .js-image {
+    height: 12vw;
+    margin: 1.5vw;
+  }
+
+  .java-image {
+    height: 15vw;
+  }
+
+  .navbar {
+    font-family: "Cascadia Code";
+    display: flex;
+    height: 2vw;
+    align-items: center;
+    background-color: var(--bg-green);
+    padding: 1vw;
+    color: var(--color-light);
+  }
+
+  .nav-border {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-light);
+    width: 100%;
+    height: 50%;
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 1vw;
+  }
+
+  .nav-items {
+    display: flex;
+    list-style: none;
+    margin: 0 0 0 2vw;
+    font-family: "Candara";
+    font-size: 1.15vw;
+    font-weight: bolder;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    margin: 0 0 0 2vw;
+    color: var(--color-grey);
+  }
+
+  .nav-link:hover {
+    color: var(--color-light);
+  }
+
+  .nav-link:hover .active {
+    display: none;
+  }
+
+  .nav-link-active {
+    transition: 0.3s;
+    text-decoration: underline;
+    margin: 0 0 0 2vw;
+    color: var(--color-light);
+  }
+
+  .name {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    font-size: 1.5vw;
+    margin: 0.5vw;
+  }
+
+  .name-input {
+    font-size: 1vw;
+    width: 30vw;
+    padding: 0.3vw;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    border: 4px solid var(--bg-green);
+    border-radius: 1vw;
+    font-weight: bold;
+    font-family: "Cascadia Code semi bold";
+    margin: 1vw;
+    text-align: center;
+  }
+
+  .name p {
+    margin: 1.25vw;
+  }
+
+  .py-image {
+    height: 13vw;
+    margin: 1vw;
+  }
+
+  .sub-btn {
+    display: inline-block;
+    transition: all 0.3s ease-in;
+    width: 15vw;
+    height: 3vw;
+    color: var(--color-light);
+    background-color: var(--bg-green);
+    border: 5px solid var(--bg-green);
+    border-radius: 2vw;
+    font-size: 1.5vw;
+    font-family: "Cascdia Code";
+    margin: 1vw;
+  }
+  .sub-btn:hover {
+    display: inline-block;
+    transition: all 0.3s ease-in;
+    width: 20vw;
+    height: 3vw;
+    color: var(--bg-green);
+    background-color: var(--color-light);
+    border: 5px solid var(--bg-green);
+    border-radius: 2vw;
+    font-size: 1.5vw;
+    font-family: "Cascdia Code";
+    margin: 1vw;
+  }
+
+  .social-link {
+    text-decoration: none;
+    color: var(--color-dark);
+    margin: 0.5vw;
+  }
+  .social-link:hover {
+    text-decoration: underline;
+    color: var(--color-blue);
+    margin: 0.5vw;
+  }
+
+  .clear-btn {
+    display: inline-block;
+    transition: all 0.3s ease-in;
+    width: 15vw;
+    height: 3vw;
+    color: var(--color-light);
+    background-color: var(--bg-green);
+    border: 5px solid var(--bg-green);
+    border-radius: 2vw;
+    font-size: 1.5vw;
+    font-family: "Cascdia Code";
+    margin: 1vw;
+  }
+  .clear-btn:hover {
+    display: inline-block;
+    transition: all 0.3s ease-in;
+    width: 20vw;
+    height: 3vw;
+    color: var(--bg-green);
+    background-color: var(--color-light);
+    border: 5px solid var(--bg-green);
+    border-radius: 2vw;
+    font-size: 1.5vw;
+    font-family: "Cascdia Code";
+    margin: 1vw;
+  }
+
+  .take-name {
+    display: flex;
+    flex-direction: column;
+    width: 16.5vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .web-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .web-greet {
+    font-family: "Cascadia Code semi bold";
+    font-size: 2vw;
+    color: var(--bg-green);
+    margin: 1vw 0vw 2vw 3.7vw;
+  }
+
+  .web-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vw;
+    background-color: var(--bg-green);
+    color: var(--color-light);
+    font-size: 1.5vw;
+  }
+}
+
+/* Here is the Css for Tablet(s),iPad(s)etc. */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about-card {
+    margin: 1vw 0;
+    font-size: 2.4vw;
+    font-family: "Candara";
+  }
+
+  .ask-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw;
+  }
+
+  .advertisement-image {
+    border-radius: 1vw;
+    border-bottom-right-radius: 10vw;
+    border-top-left-radius: 10vw;
+    background-color: var(--color-light);
+    width: 90%;
+    height: 65vw;
+    margin: 10vw 0 3vw 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .about-web {
+    font-family: "Bahnschrift";
+    font-size: 1.9vw;
+    margin: 0.5vw 3vw;
+  }
+
+  .body-image2 {
+    box-shadow: none;
+    height: 32vw;
+    margin: 0 3vw 0 0;
+    padding: 1vw;
+    border-top-left-radius: 9vw;
+    border-bottom-right-radius: 9vw;
+  }
+
+  .body-image {
+    display: none;
+  }
+
+  .btn {
+    transition: all 0.3s ease-in;
+    width: inherit;
+    padding: 1vw 1vw;
+    border: 2px solid var(--bg-green);
+    border-radius: 1.5vw;
+    background: var(--color-light);
+    color: var(--bg-green);
+    font-weight: bold;
+    font-size: 2vw;
+    cursor: pointer;
+  }
+
+  .c-image {
+    height: 25vw;
+    margin: 0.5vw;
+  }
+
+  .css-image {
+    height: 25vw;
+  }
+
+  .card-content {
+    margin: 0 2vw;
+  }
+
+  .card-title {
+    font-size: 3vw;
+  }
+
+  .standard-btn {
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    display: flex;
+    font-size: 2vw;
+    font-family: "Cascadia Code semi bold";
+    color: var(--color-light);
+    background-color: var(--bg-green);
+    border: 5px solid var(--bg-green);
+    padding: 0.3vw 0.6vw;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2vw;
+    margin: 1vw 0;
+  }
+
+  .card {
+    border: 6px solid var(--bg-green);
+    border-radius: 2vw;
+    margin: 2vw;
+    padding: 0.7vw;
+    display: flex;
+    width: 83vw;
+    height: 26vw;
+  }
+
+  .card-image-1 {
+    margin: 0.5vw 0 0 1vw;
+    height: 25vw;
+  }
+  .card-image-2 {
+    margin: 0 1vw 0 2vw;
+    height: 26vw;
+  }
+  .card-image-3 {
+    margin: 0 0 0 1vw;
+    height: 25vw;
+  }
+  .card-image-4 {
+    margin: 1vw 0 0 2vw;
+    height: 24vw;
+  }
+  .card-image-5 {
+    margin: 0 0 0 1vw;
+    height: 26vw;
+  }
+  .card-image-6 {
+    margin: 1vw 1vw 0 2vw;
+    height: 22vw;
+  }
+
+  .cards-container {
+    border-radius: 2vw;
+    margin: 9vw;
+    display: grid;
+    align-items: center;
+    background-color: var(--color-light);
+    width: 90%;
+    height: fit-content;
+  }
+  .container {
+    border-radius: 1vw;
+    margin: 10vw;
+    display: grid;
+    align-items: center;
+    background-color: var(--color-light);
+    width: 90%;
+    height: fit-content;
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 50vw 50vw;
+    padding: 3vw 0;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .doc-btn {
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    display: flex;
+    font-size: 2.5vw;
+    font-family: "Cascadia Code semi bold";
+    color: var(--color-light);
+    background-color: var(--bg-green);
+    border: 5px solid var(--bg-green);
+    padding: 0.3vw 0.6vw;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2vw;
+    margin: 1vw 0;
+  }
+
+  .doc-grid {
+    display: grid;
+    grid-row: auto;
+  }
+
+  .font-larger {
+    font-size: 4vw;
+    text-align: center;
+  }
+  .font-large {
+    font-size: 3vw;
+    text-align: center;
+  }
+  .font-medium {
+    font-size: 2vw;
+    text-align: center;
+  }
+  .font-small {
+    font-size: 1.25vw;
+    text-align: center;
+  }
+
+  .form-head {
+    font-size: 6vw;
+    color: var(--bg-green);
+  }
+
+  .form-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--bg-green);
+    border-radius: 1vw;
+    width: 85%;
+    margin: 2vw;
+    padding: 4vw 0;
+  }
+
+  .foot-para {
+    font-family: "Bahnschrift";
+    margin: 1vw;
+    text-align: center;
+  }
+
+  .foot-para-bold {
+    font-family: "Candara";
+    margin: 1vw;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  .search-div {
+    position: absolute;
+    right: 5vw;
+  }
+
+  .search-bar {
+    font-size: 2vw;
+    width: 47vw;
+    height: 2vw;
+    background: var(--color-light);
+    border: 2px solid var(--color-light);
+    border-radius: 1.5vw;
+    padding: 1vw;
+  }
+
+  .g-item {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    margin: 1vw 3.6vw 3vw;
+    border: 5px solid var(--bg-green);
+    border-radius: 2vw;
+  }
+
+  .html-image {
+    height: 22vw;
+    margin: 1.5vw;
+  }
+
+  .heading-3 {
+    font-size: 2.5vw;
+    font-family: "Bahnschrift";
+    font-weight: bolder;
+  }
+
+  .js-image {
+    height: 22vw;
+    margin: 1.5vw;
+  }
+
+  .java-image {
+    height: 25vw;
+  }
+
+  .navbar {
+    font-family: "Cascadia Code";
+    display: flex;
+    height: 8vw;
+    align-items: center;
+    background-color: var(--bg-green);
+    padding: 1vw;
+    color: var(--color-light);
+  }
+
+  .nav-border {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-light);
+    width: 100%;
+    height: 50%;
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 1vw;
+  }
+
+  .nav-items {
+    top: 10vw;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--dark-green);
+    list-style: none;
+    padding: 0 0 0 2vw;
+    margin: 0 0 0 -6vw;
+    width: 103vw;
+    height: 5vw;
+    font-family: "Candara";
+    font-size: 2.7vw;
+    font-weight: bolder;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    margin: 0 0 0 7vw;
+    color: var(--color-grey);
+  }
+
+  .nav-link-active {
+    transition: 0.3s;
+    text-decoration: underline;
+    margin: 0 0 0 7vw;
+    color: var(--color-light);
+  }
+
+  .name {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    font-size: 1.5vw;
+    margin: 0.5vw;
+  }
+
+  .name-input {
+    font-size: 3vw;
+    width: 50vw;
+    padding: 0.3vw;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    border: 4px solid var(--bg-green);
+    border-radius: 2vw;
+    font-weight: bold;
+    font-family: "Cascadia Code semi bold";
+    margin: 4vw 1vw;
+    text-align: center;
+  }
+
+  .name p {
+    margin: 1.25vw;
+  }
+
+  .py-image {
+    height: 23vw;
+    margin: 1vw;
+  }
+
+  .sub-btn {
+    display: inline-block;
+    transition: all 0.3s ease-in;
+    width: 25vw;
+    height: 5.2vw;
+    color: var(--color-light);
+    background-color: var(--bg-green);
+    border: 5px solid var(--bg-green);
+    border-radius: 2vw;
+    font-size: 2.5vw;
+    font-family: "Cascdia Code";
+    margin: 1vw;
+  }
+
+  .clear-btn {
+    display: inline-block;
+    transition: all 0.3s ease-in;
+    width: 25vw;
+    height: 5vw;
+    color: var(--color-light);
+    background-color: var(--bg-green);
+    border: 5px solid var(--bg-green);
+    border-radius: 2vw;
+    font-size: 2.5vw;
+    font-family: "Cascdia Code";
+    margin: 1vw;
+  }
+
+  .social-link {
+    text-decoration: none;
+    color: var(--color-blue);
+    margin: 0.5vw;
+    font-size: 2.5vw;
+  }
+
+  .take-name {
+    display: flex;
+    flex-direction: column;
+    width: 16.5vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .web-title {
+    font-size: 4vw;
+    margin: 0 0 0 4vw;
+  }
+
+  .web-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .web-greet {
+    font-family: "Cascadia Code semi bold";
+    font-size: 4vw;
+    color: var(--bg-green);
+    margin: 1vw 0vw 2vw 3.7vw;
+  }
+
+  .web-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vw;
+    background-color: var(--bg-green);
+    color: var(--color-light);
+    font-size: 2vw;
+  }
+}
+
+/* Here is the Css for Smart Phone(s),iPhones(s)etc. */
+@media screen and (max-width: 767px) {
+  .about-card {
+    margin: 1vw 0;
+    font-size: 2.5vw;
+    font-family: "Candara";
+  }
+  
+  .advertisement-image {
+    border-radius: 1vw;
+    border-bottom-right-radius: 10vw;
+    border-top-left-radius: 10vw;
+    background-color: var(--color-light);
+    width: 90%;
+    height: 90vw;
+    margin: 10vw 0 3vw 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .ask-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw;
+  }
+
+  .about-web {
+    font-family: "Bahnschrift";
+    font-size: 4vw;
+    margin: 0.5vw 3vw;
+  }
+
+  .body-image2, .body-image {
+    display: none;
+  }
+
+
+  .btn {
+    transition: all 0.3s ease-in;
+    width: inherit;
+    padding: 1vw 1vw;
+    border: 2px solid var(--bg-green);
+    border-radius: 2vw;
+    background: var(--color-light);
+    color: var(--bg-green);
+    font-weight: bold;
+    font-size: 3.5vw;
+    cursor: pointer;
+  }
+
+  .c-image {
+    height: 55vw;
+    margin: 0.5vw;
+  }
+
+  .css-image {
+    height: 59vw;
+  }
+
+  .card-content {
+    margin: 0 2vw;
+  }
+
+  .card-title {
+    font-size: 4vw;
+  }
+
+  .standard-btn {
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    display: flex;
+    font-size: 3vw;
+    font-family: "Cascadia Code semi bold";
+    color: var(--color-light);
+    background-color: var(--bg-green);
+    border: 5px solid var(--bg-green);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2vw;
+    margin: 1vw 0;
+  }
+
+  .card {
+    border: 1.5vw solid var(--bg-green);
+    border-radius: 2vw;
+    margin: 2vw;
+    padding: 0.7vw;
+    display: flex;
+    width: 83vw;
+    height: 27vw;
+  }
+
+  .card-image-1 {
+    display: none;
+  }
+  .card-image-2 {
+    display: none;
+  }
+  .card-image-3 {
+    display: none;
+  }
+  .card-image-4 {
+    display: none;
+  }
+  .card-image-5 {
+    display: none;
+  }
+  .card-image-6 {
+    display: none;
+  }
+
+  .cards-container {
+    border-radius: 2vw;
+    margin: 9vw;
+    display: grid;
+    align-items: center;
+    background-color: var(--color-light);
+    width: 90%;
+    height: fit-content;
+  }
+  .container {
+    border-radius: 1vw;
+    margin: 10vw;
+    display: grid;
+    align-items: center;
+    background-color: var(--color-light);
+    width: 90%;
+    height: fit-content;
+    grid-template-columns: 77vw;
+    grid-template-rows: 88vw;
+    justify-content: center;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .doc-btn {
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    display: flex;
+    font-size: 4.5vw;
+    font-family: "Cascadia Code semi bold";
+    color: var(--color-light);
+    background-color: var(--bg-green);
+    border: 5px solid var(--bg-green);
+    padding: 0.3vw 0.6vw;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2vw;
+    margin: 1vw 0;
+  }
+
+  .doc-grid {
+    display: grid;
+    grid-row: auto;
+  }
+
+  .font-larger {
+    font-size: 4vw;
+    text-align: center;
+  }
+  .font-large {
+    font-size: 3vw;
+    text-align: center;
+  }
+  .font-medium {
+    font-size: 2vw;
+    text-align: center;
+  }
+  .font-small {
+    font-size: 1.25vw;
+    text-align: center;
+  }
+
+  .form-head {
+    font-size: 10vw;
+    color: var(--bg-green);
+  }
+
+  .form-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--bg-green);
+    border-radius: 1vw;
+    width: 85%;
+    margin: 4vw;
+    padding: 4vw 0;
+  }
+
+  .foot-para {
+    font-family: "Bahnschrift";
+    margin: 1vw;
+    text-align: center;
+  }
+
+  .foot-para-bold {
+    font-family: "Candara";
+    margin: 1vw;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  .search-bar {
+    font-size: 3vw;
+    width: 75vw;
+    height: 3.5vw;
+    background: var(--color-light);
+    border: 2px solid var(--color-light);
+    border-radius: 1.5vw;
+    padding: 1vw;
+  }
+
+  .g-item {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    margin: 10vw 3.6vw 3vw;
+    border: 5px solid var(--bg-green);
+    border-radius: 2vw;
+    height: 90vw;
+  }
+
+  .g-item-2 {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    margin: 20vw 3.6vw 3vw;
+    border: 5px solid var(--bg-green);
+    border-radius: 2vw;
+    height: 90vw;
+  }
+
+  .html-image {
+    height: 52vw;
+    margin: 1.5vw;
+  }
+
+  .heading-3 {
+    font-size: 5vw;
+    font-family: "Bahnschrift";
+    font-weight: bolder;
+  }
+
+  .js-image {
+    height: 51vw;
+    margin: 1.5vw;
+  }
+
+  .java-image {
+    height: 56vw;
+  }
+
+  .navbar {
+    font-family: "Cascadia Code";
+    display: flex;
+    flex-direction: column;
+    height: 19vw;
+    align-items: center;
+    background-color: var(--bg-green);
+    padding: 1vw;
+    color: var(--color-light);
+  }
+
+  .nav-border {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-light);
+    width: 100%;
+    height: 50%;
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 1vw;
+  }
+
+  .nav-items {
+    top: 21vw;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--dark-green);
+    list-style: none;
+    padding: 0 0 0 2vw;
+    margin: 0 0 0 -6vw;
+    width: 104vw;
+    height: 7vw;
+    font-family: "Candara";
+    font-size: 4vw;
+    font-weight: bolder;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    margin: 0 0 0 4vw;
+    color: var(--color-grey);
+  }
+
+  .nav-link-active {
+    transition: 0.3s;
+    text-decoration: underline;
+    margin: 0 0 0 4vw;
+    color: var(--color-light);
+  }
+
+  .name {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    font-size: 1.5vw;
+    margin: 0.5vw;
+  }
+
+  .name-input {
+    font-size: 5vw;
+    width: 65vw;
+    padding: 0.3vw;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    border: 4px solid var(--bg-green);
+    border-radius: 3vw;
+    font-weight: bold;
+    font-family: "Cascadia Code semi bold";
+    margin: 4vw 1vw;
+    text-align: center;
+  }
+
+  .name p {
+    margin: 1.25vw;
+  }
+
+  .py-image {
+    height: 52vw;
+    margin: 1vw;
+  }
+
+  .sub-btn {
+    display: inline-block;
+    transition: all 0.3s ease-in;
+    width: 27vw;
+    color: var(--color-light);
+    background-color: var(--bg-green);
+    border: 5px solid var(--bg-green);
+    border-radius: 4vw;
+    font-size: 6.5vw;
+    font-family: "Cascdia Code";
+    margin: 1vw;
+  }
+
+  .clear-btn {
+    display: inline-block;
+    transition: all 0.3s ease-in;
+    width: 27vw;
+    color: var(--color-light);
+    background-color: var(--bg-green);
+    border: 5px solid var(--bg-green);
+    border-radius: 4vw;
+    font-size: 6.5vw;
+    font-family: "Cascdia Code";
+    margin: 1vw;
+  }
+
+  .social-link {
+    text-decoration: none;
+    color: var(--color-blue);
+    margin: 0.5vw;
+    font-size: 3.5vw;
+  }
+
+  .take-name {
+    display: flex;
+    flex-direction: column;
+    width: 16.5vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .web-title {
+    font-size: 9vw;
+    margin: 0 0 0 4vw;
+  }
+
+  .web-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .web-greet {
+    font-family: "Cascadia Code semi bold";
+    font-size: 8vw;
+    color: var(--bg-green);
+    margin: 1vw 0vw 2vw 3.7vw;
+  }
+
+  .web-footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vw;
+    background-color: var(--bg-green);
+    color: var(--color-light);
+    font-size: 4.5vw;
+    width: 100%;
+  }
+
+  .w-40 {
+    width: 50vw;
+  }
+}
+
+/* The CSS is all set and the media queries are working properly */
