@@ -5,4 +5,4 @@ I created this in Pure HTML, CSS and used Images and Icons to Make this site goo
 I didn't used JavaScript here, Because I created this Site to Practice CSS,
 If you liked this site you can send me your review,
 My E-mail = areebzikariya@gmail.com ;
-My Instagram = codee.404 ;
+My Instagram = codee.404@instagram.com ;
